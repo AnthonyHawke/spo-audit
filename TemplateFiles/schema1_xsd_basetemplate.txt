@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import schemaLocation="schema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+	<xsd:import schemaLocation="schema2.xsd" namespace="http://schemas.microsoft.com/office/2009/documentManagement/types"/>
+	<xsd:import schemaLocation="schema3.xsd" namespace="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"/>
+	<xsd:import schemaLocation="schema4.xsd" namespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"/>
+	<xsd:element name="SharePointListItem_RW">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:ID" minOccurs="0"/>
+				<xsd:element ref="my:Title" minOccurs="0"/>
+				<xsd:element ref="my:Author" minOccurs="0"/>
+				<xsd:element ref="my:Editor" minOccurs="0"/>
+				<xsd:element ref="my:Modified" minOccurs="0"/>
+				<xsd:element ref="my:Created" minOccurs="0"/>
+				<xsd:element ref="my:Attachments" minOccurs="0"/>
+				<xsd:element ref="my:AuditDate" minOccurs="0"/>
+				<!-- schema1_xsd_QID_both_insertpoint1 -->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ID" ma:displayName="ID" ma:readOnly="True" ma:allowDeletion="false" nillable="true" type="dms:CounterType"/>
+	<xsd:element name="Title" ma:displayName="Agency" ma:allowDeletion="false">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Author" ma:displayName="Created By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Editor" ma:displayName="Modified By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Modified" ma:displayName="Modified" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="Created" ma:displayName="Created" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="Attachments" ma:displayName="Attachments" ma:allowDeletion="false" type="dms:AttachmentsType"/>
+	<xsd:element name="AuditDate" ma:displayName="Audit Date" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="true" nillable="true" type="dms:DateOnlyType"/>
+	<!-- schema1_xsd_QID_both_insertpoint2 -->
+</xsd:schema>

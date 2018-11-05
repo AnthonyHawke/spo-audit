@@ -1,0 +1,2 @@
+				<xsd:element ref="my:QIDReplaceResponse" minOccurs="0"/>
+				<xsd:element ref="my:QIDReplaceDetail" minOccurs="0"/>

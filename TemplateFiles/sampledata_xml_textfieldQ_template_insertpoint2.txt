@@ -1,0 +1,2 @@
+			<my:QIDReplaceResponse>6</my:QIDReplaceResponse>
+			<my:QIDReplaceDetail/>

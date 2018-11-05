@@ -1,0 +1,2 @@
+			<xsf:field internalName="QIDReplaceResponse" required="no" type="Choice"></xsf:field>
+			<xsf:field internalName="QIDReplaceDetail" required="no" type="Plain"></xsf:field>

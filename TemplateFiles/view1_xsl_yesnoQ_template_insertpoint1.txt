@@ -1,0 +1,63 @@
+﻿												<tr class="xdTableOffsetRow">
+													<td style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 22px; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #bfbfbf" class="xdTableOffsetCellLabel">
+														<h4>
+															<span class="xdlabel">QIDReplace</span>
+														</h4>
+													</td>
+													<td style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 5px; PADDING-RIGHT: 22px" class="xdTableOffsetCellComponent">
+														<h6 style="FONT-WEIGHT: normal">ITEMReplace</h6>
+														<div>
+															<select title="" class="xdComboBox xdBehavior_Select" style="WIDTH: 149px" size="1" xd:disableEditing="no" xd:binding="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceResponse" xd:CtrlId="CTRLQIDReplaceResponse" xd:xctname="dropdown" xd:boundProp="value" value="Yes" tabIndex="0">
+																<xsl:attribute name="value">
+																	<xsl:value-of select="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceResponse"/>
+																</xsl:attribute>
+																<xsl:choose>
+																	<xsl:when test="function-available('xdXDocument:GetDOM')">
+																		<xsl:variable name="val" select="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceResponse"/>
+																		<xsl:if test="not(xdXDocument:GetDOM(&quot;Choices Data Connection&quot;)/root/QIDReplaceResponse/SharePointListChoice_RW[.=$val] or $val='')">
+																			<option selected="selected">
+																				<xsl:attribute name="value">
+																					<xsl:value-of select="$val"/>
+																				</xsl:attribute>
+																				<xsl:value-of select="$val"/>
+																			</option>
+																		</xsl:if>
+																		<xsl:for-each select="xdXDocument:GetDOM(&quot;Choices Data Connection&quot;)/root/QIDReplaceResponse/SharePointListChoice_RW">
+																			<option>
+																				<xsl:attribute name="value">
+																					<xsl:value-of select="."/>
+																				</xsl:attribute>
+																				<xsl:if test="$val=.">
+																					<xsl:attribute name="selected">selected</xsl:attribute>
+																				</xsl:if>
+																				<xsl:value-of select="@DisplayName"/>
+																			</option>
+																		</xsl:for-each>
+																	</xsl:when>
+																	<xsl:otherwise>
+																		<option>
+																			<xsl:value-of select="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceResponse"/>
+																		</option>
+																	</xsl:otherwise>
+																</xsl:choose>
+															</select>
+														</div>
+														<div>
+															<h6 style="FONT-WEIGHT: normal"> </h6>
+														</div>
+													</td>
+													<td style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 5px; PADDING-RIGHT: 22px" class="xdTableOffsetCellComponent">
+														<h6 style="FONT-WEIGHT: normal">DetailReplace</h6>
+														<div><span title="" class="xdTextBox" hideFocus="1" tabIndex="0" xd:disableEditing="no" xd:binding="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceDetail" xd:CtrlId="CTRLQIDReplaceDetail" xd:xctname="PlainText" xd:datafmt="&quot;string&quot;,&quot;plainMultiline&quot;" style="WORD-WRAP: break-word; HEIGHT: 50px; WIDTH: 100%; WHITE-SPACE: normal; OVERFLOW-X: auto; OVERFLOW-Y: auto">
+																<xsl:choose>
+																	<xsl:when test="function-available('xdFormatting:formatString')">
+																		<xsl:value-of select="xdFormatting:formatString(dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceDetail,&quot;string&quot;,&quot;plainMultiline&quot;)" disable-output-escaping="yes"/>
+																	</xsl:when>
+																	<xsl:otherwise>
+																		<xsl:value-of select="dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceDetail" disable-output-escaping="yes"/>
+																	</xsl:otherwise>
+																</xsl:choose>
+															</span>
+														</div>
+													</td>
+												</tr>

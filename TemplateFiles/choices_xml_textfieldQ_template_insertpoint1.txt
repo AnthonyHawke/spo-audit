@@ -1,0 +1,12 @@
+<QIDReplaceResponse>
+<SharePointListChoice_RW DisplayName="1">1</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="2">2</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="3">3</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="4">4</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="5">5</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="6">6</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="7">7</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="8">8</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="9">9</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="10">10</SharePointListChoice_RW>
+</QIDReplaceResponse>

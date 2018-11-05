@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls">
+	<xsd:import namespace="http://schemas.microsoft.com/office/2009/documentManagement/types" schemaLocation="schema2.xsd"/>
+	<xsd:element name="SharePointListItem_RW">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="q:ID" minOccurs="0"/>
+				<xsd:element ref="q:Title" minOccurs="0"/>
+				<xsd:element ref="q:Author" minOccurs="0"/>
+				<xsd:element ref="q:Editor" minOccurs="0"/>
+				<xsd:element ref="q:Modified" minOccurs="0"/>
+				<xsd:element ref="q:Created" minOccurs="0"/>
+				<xsd:element ref="q:AuditDate" minOccurs="0"/>
+				<!-- schema4_xsd_QID_response_insertpoint1 -->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ID" type="dms:CounterType" ma:displayName="ID" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Title" type="dms:TextType" ma:displayName="Agency" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Author" type="dms:TextType" ma:displayName="Created By" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Editor" type="dms:TextType" ma:displayName="Modified By" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Modified" type="dms:DateOnlyType" ma:displayName="Modified" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Created" type="dms:DateOnlyType" ma:displayName="Created" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="AuditDate" type="dms:DateOnlyType" ma:displayName="Audit Date" ma:readOnly="false" nillable="true"/>
+	<!-- schema4_xsd_QID_response_insertpoint2 -->
+</xsd:schema>

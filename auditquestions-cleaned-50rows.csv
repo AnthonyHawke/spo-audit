@@ -1,0 +1,51 @@
+QType,QID,ITEM,Detail
+YesNo,Q1.1,Do 3rd parties support your IT services?,List all companies and a high level summary of function.
+AllMostSomeNone,Q1.2,Are confidentiality agreements and liability clauses included in 3rd party contracts?,For any agreements without these requirements- please give details to justify.
+AllMostSomeNone,Q1.3,Do your 3rd party suppliers and vendors have ISO (or other quality) certifications?,Please detail the certifications per party.
+AllMostSomeNone,Q1.4,Are SLAs in place in 3rd party agreements?,If required- please detail where SLAs are incomplete or partially applied.
+AllMostSomeNone,Q1.5,Are bonus or malus systems in place in your 3rd party agreements?,Please provide details per party at a high level (if possible).
+AllMostSomeNone,Q1.6,Are roles and responsibilities clearly defined in your 3rd party agreements?,If not- please indicate why.
+TextField,Q1.7,For each 3rd party- how quickly could a relationship be terminated?
+TextField,Q1.8,For each 3rd party- detail (at a high level) the exit procedure and any risks.
+YesNo,Q1.9,Do 3rd parties physically access server rooms or secured locations?,If so- please provide a summary of which parties are accessing which systems.
+TextField,Q1.10,Detail your management process: how access added or removed- when or who reviews- history
+YesNo,Q1.11,Do third parties access infrastructure remotely?,If so- please provide a summary of which parties are accessing which systems.
+TextField,Q1.12,Detail management process: how access added or removed- when or who reviews- history
+YesNo,Q1.13,Are any third parties managing business processes?,If so- please provide a summary of which parties are managing which services.
+YesNo,Q1.14,Is confidential data shared with these partners?,If so- please summarise which data is shared with which parties.
+TextField,Q1.15,How does the third party securely store  or  protect the information?,Partners or third parties must store data at least to same the level as MSC internally.
+YesNo,Q1.16,Are you regularly relying or using temporary or consultancy staff?,Please summarise which type of staff- for what purpose and how frequently.
+TextField,Q2.1,How many Domain Admins
+YesNo,Q2.2,Are AD computer objects regularly being cleaned-up?,Detail how this is performed.
+YesNo,Q2.3,Is the internal Active Directory OU well structured?,Please quickly summarise the structure (e.g. Server- Computer- User- Groups).
+YesNo,Q2.4,Are DCs backed-up on a daily basis?,Please note any recent major or recurring problems.
+YesNo,Q2.5,Are all subnets configured in Sites and Services?,If not- please indicate why.
+YesNo,Q2.6,Are OUs protected against accidental bulk deletion?,If not- please indicate why.
+YesNo,Q2.7,Are (MSC standard) good or strong Password policies in place?,If not- please indicate why.
+YesNo,Q2.8,Is SMBv1 disabled?,If not- please indicate why.
+YesNo,Q2.9,Is NTLMv1 disabled?,If not- please indicate why.
+YesNo,Q2.10,Are at least 2 DCs present- within the domain- not the site?,If not- please indicate why.
+YesNo,Q2.11,Administrative accounts seperated from user accounts (no users in Domain Admins),Do IT staff have a different account for Admin and normal purposes?
+YesNo,Q2.12,Are Service Accounts used for applications with targeted permissions?,If not- please indicate why.  If so- please provide a summary of account structure.
+YesNo,Q2.13,Check or confirm no duplicate SPNs present.,Detail any duplicate SPNs.
+YesNo,Q2.14,Check or confirm no duplicate UPNs present.,Detail any duplicate UPNs.
+YesNo,Q2.15,Check or confirm Domain Users memberOf count is 1,Detail Domain Users memberOf actual count.
+YesNo,Q2.16,Confirm Kerberos Token size is set to 48KB,
+YesNo,Q2.17,Confirm no Stale domain or forest trust relationships found,Detail any stale relationships found.
+YesNo,Q2.18,Check or confirm no unsupported OSes found in any AD Computer Objects,If unsupported OSes found- please detail.
+YesNo,Q2.19,Check or confirm at domain level that Windows Time Service used.,If not- please detail time source(s).
+YesNo,Q2.20,Confirm all DCs are only being used for approved roles - KMS or DNS or DHCP.,If not- detail each DC and the extra roles to be migrated or removed.
+YesNo,Q2.21,Is Applocker (GPO) enabled?,If not- why not. If so- are policies defined and being managed?
+AllMostSomeNone,Q2.22,Is Bitlocker enabled on all disks?,If not- why not.
+YesNo,Q2.23,Are Bitlocker keys being stored in Active Directory?,If not- why not.
+AllMostSomeNone,Q2.24,Is LAPS (Local Admin Password Solution) implemented?,If not- why not.
+YesNo,Q2.25,Are MSC naming standards being followed?,If not- why not.
+YesNo,Q2.26,Is the AD Forest Functional level at least 2012 R2?,If not- why not and what is the timeframe for upgrade?
+YesNo,Q3.1,Is standard corporate Antivirus installed?,Which product?
+YesNo,Q3.2,Are appropriate exclusions configured?,SQL Server  or  Oracle- Cluster Services- Hypervisors
+YesNo,Q3.3,Are all machines confirmed virus and malware free?,Provide evidence to confirm this.
+YesNo,Q3.4,Are AV alerts configured- and functional?,Detail who is notified- and how.
+YesNo,Q3.5,Are reports generated confirming machine health?,Confirm process and details.  If possible review (and provide details) of the latest report.
+YesNo,Q4.1,Are licenses count's and usage being tracked or maintained?,How is this done? (Product- process)
+YesNo,Q4.2,Are all critical (local) business application's known or listed?,How is this done? (Product- process)
+AllMostSomeNone,Q4.3,Are all critical application's or software covered with a maintenance and support agreement?,How are these support and maintenance agreements managed and renewed?

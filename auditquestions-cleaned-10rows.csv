@@ -1,0 +1,11 @@
+QType,QID,ITEM,Detail
+YesNo,Q1.1,Do 3rd parties support your IT services?,List all companies and a high level summary of function.
+AllMostSomeNone,Q1.2,Are confidentiality agreements and liability clauses included in 3rd party contracts?,For any agreements without these requirements- please give details to justify.
+AllMostSomeNone,Q1.3,Do your 3rd party suppliers and vendors have ISO (or other quality) certifications?,Please detail the certifications per party.
+AllMostSomeNone,Q1.4,Are SLAs in place in 3rd party agreements?,If required- please detail where SLAs are incomplete or partially applied.
+AllMostSomeNone,Q1.5,Are bonus or malus systems in place in your 3rd party agreements?,Please provide details per party at a high level (if possible).
+AllMostSomeNone,Q1.6,Are roles and responsibilities clearly defined in your 3rd party agreements?,If not- please indicate why.
+TextField,Q1.7,For each 3rd party- how quickly could a relationship be terminated?,
+TextField,Q1.8,For each 3rd party- detail (at a high level) the exit procedure and any risks.,risk example - extraction of our data
+YesNo,Q1.9,Do 3rd parties physically enter server room(s) or secured locations?,If so- please provide a summary of which parties are accessing which systems.
+TextField,Q1.10,Detail your management process: how access added or removed- when or who reviews- history,

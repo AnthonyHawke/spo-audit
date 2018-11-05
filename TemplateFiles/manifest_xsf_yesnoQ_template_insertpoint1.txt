@@ -1,0 +1,3 @@
+				<xsf:xmlToEdit name="QIDReplaceDetail" item="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:QIDReplaceDetail">
+					<xsf:editWith type="plainMultiline" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>

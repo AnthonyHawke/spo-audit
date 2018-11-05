@@ -1,0 +1,6 @@
+<QIDReplaceResponse>
+<SharePointListChoice_RW DisplayName="All">All</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="Most">Most</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="Some">Some</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="None">None</SharePointListChoice_RW>
+</QIDReplaceResponse>

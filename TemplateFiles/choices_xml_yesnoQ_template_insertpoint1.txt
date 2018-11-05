@@ -1,0 +1,4 @@
+<QIDReplaceResponse>
+<SharePointListChoice_RW DisplayName="Yes">Yes</SharePointListChoice_RW>
+<SharePointListChoice_RW DisplayName="No">No</SharePointListChoice_RW>
+</QIDReplaceResponse>
