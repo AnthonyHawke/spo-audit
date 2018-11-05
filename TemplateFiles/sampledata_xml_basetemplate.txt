@@ -1,0 +1,57 @@
+<dfs:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<dfs:queryFields>
+		<q:SharePointListItem_RW>
+			<q:ID/>
+			<q:Title/>
+			<q:Author/>
+			<q:Editor/>
+			<q:Modified/>
+			<q:Created/>
+			<q:AuditDate/>
+			<!-- sampledata_xml_QID_response_insertpoint1 -->
+		</q:SharePointListItem_RW>
+	</dfs:queryFields>
+	<dfs:dataFields>
+		<my:SharePointListItem_RW>
+			<my:ID/>
+			<my:Title/>
+			<my:Author>
+				<pc:Person>
+					<pc:DisplayName/>
+					<pc:AccountId/>
+					<pc:AccountType/>
+				</pc:Person>
+			</my:Author>
+			<my:Editor>
+				<pc:Person>
+					<pc:DisplayName/>
+					<pc:AccountId/>
+					<pc:AccountType/>
+				</pc:Person>
+			</my:Editor>
+			<my:Modified/>
+			<my:Created/>
+			<my:Attachments>
+				<attachmentURL/>
+			</my:Attachments>
+			<my:AuditDate/>
+			<!-- sampledata_xml_QID_both_insertpoint2 -->
+		</my:SharePointListItem_RW>
+	</dfs:dataFields>
+	<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution">
+		<xd:Namespaces>
+			<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+		</xd:Namespaces>
+		<xd:RequiredAnys/>
+	</xd:SchemaInfo>
+	<xd:DataConnection Name="Choices Data Connection">
+		<root xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+			<!-- sampledata_xml_QID_response_insertpoint3 -->
+			<xd:SchemaInfo LocalName="root" NamespaceURI="">
+				<xd:Namespaces>
+					<xd:Namespace LocalName="root" NamespaceURI=""/>
+				</xd:Namespaces>
+			</xd:SchemaInfo>
+		</root>
+	</xd:DataConnection>
+</dfs:myFields>

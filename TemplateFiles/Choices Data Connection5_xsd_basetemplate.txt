@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:all>
+			<!-- choicesdataconnection_xsd_QID_response_insertpoint1 -->
+			</xsd:all>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SharePointListChoice_RW">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute ref="DisplayName"></xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+	<!-- choicesdataconnection_xsd_QID_response_insertpoint2 -->
+	<xsd:attribute name="DisplayName" type="xsd:string"></xsd:attribute>
+</xsd:schema>

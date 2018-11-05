@@ -1,0 +1,2 @@
+	<xsd:element name="QIDReplaceResponse" ma:displayName="QIDReplaceResponse" ma:auxDataSourceName="Choices Data Connection" ma:auxChoicesXPath="/root/QIDReplaceResponse/SharePointListChoice_RW" ma:auxValue="." ma:auxDisplay="@DisplayName" ma:allowDeletion="true" type="dms:ChoiceType"/>
+	<xsd:element name="QIDReplaceDetail" ma:displayName="QIDReplaceDetail" ma:formatSpec="plainMultiline" ma:formatCategory="string" ma:allowDeletion="true" type="dms:NotePlainType"/>

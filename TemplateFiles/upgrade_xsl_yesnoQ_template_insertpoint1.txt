@@ -1,0 +1,10 @@
+			<xsl:element name="q:QIDReplaceResponse">
+				<xsl:choose>
+					<xsl:when test="q:QIDReplaceResponse/text()[1]">
+						<xsl:copy-of select="q:QIDReplaceResponse/text()[1]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:attribute name="xsi:nil">true</xsl:attribute>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:element>

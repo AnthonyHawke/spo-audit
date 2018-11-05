@@ -1,0 +1,11 @@
+			<xsl:element name="my:QIDReplaceResponse">
+				<xsl:choose>
+					<xsl:when test="my:QIDReplaceResponse">
+						<xsl:copy-of select="my:QIDReplaceResponse/text()[1]"/>
+					</xsl:when>
+					<xsl:otherwise>6</xsl:otherwise>
+				</xsl:choose>
+			</xsl:element>
+			<xsl:element name="my:QIDReplaceDetail">
+				<xsl:copy-of select="my:QIDReplaceDetail/text()[1]"/>
+			</xsl:element>

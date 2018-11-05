@@ -1,0 +1,7 @@
+	<xsd:element name="QIDReplaceResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="SharePointListChoice_RW" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>

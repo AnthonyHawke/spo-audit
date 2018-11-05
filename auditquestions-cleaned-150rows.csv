@@ -1,0 +1,151 @@
+QType,QID,ITEM,Detail
+YesNo,S1Q1,Do 3rd parties support your IT services?,List all companies and a high level summary of function.
+AllMostSomeNone,S1Q2,Are confidentiality agreements and liability clauses included in 3rd party contracts?,For any agreements without these requirements -  please give details to justify.
+AllMostSomeNone,S1Q3,Do your 3rd party suppliers and vendors have ISO (or other quality) certifications?,Please detail the certifications per party.
+AllMostSomeNone,S1Q4,Are SLA's in place in 3rd party agreements?,If required -  please detail where SLA's are incomplete or partially applied.
+AllMostSomeNone,S1Q5,Are bonus or malus systems in place in your 3rd party agreements?,Please provide details per party at a high level (if possible).
+AllMostSomeNone,S1Q6,Are roles and responsibilities clearly defined in your 3rd party agreements?,If not -  please indicate why.
+TextField,S1Q7,For each 3rd party -  how quickly could a relationship be terminated?,
+TextField,S1Q8,For each 3rd party -  detail (at a high level) the exit procedure and any risks.,risk example  - extraction of our data
+YesNo,S1Q9,Do 3rd parties physically access server room(s) or secured locations?,If so -  please provide a summary of which parties are accessing which systems.
+TextField,S1Q10,Detail your management process: how access added or removed -  when or who reviews -  history,
+YesNo,S1Q11,Do third parties access infrastructure remotely?,If so -  please provide a summary of which parties are accessing which systems.
+TextField,S1Q12,Detail management process: how access added or removed -  when or who reviews -  history,
+YesNo,S1Q13,Are any third parties managing business processes?,If so -  please provide a summary of which parties are managing which services.
+YesNo,S1Q14,Is confidential data shared with these partners?,If so -  please summarise which data is shared with which parties.
+TextField,S1Q15,How does the third party securely store  or  protect the information?,Partners or third parties must store data at least to same the level as MSC internally.
+YesNo,S1Q16,Are you regularly relying or using temporary or consultancy staff?,Please summarise which type of staff -  for what purpose and how frequently.
+TextField,S2Q1,How many Domain Admins,
+YesNo,S2Q2,Are AD computer objects regularly being cleaned -up?,Detail how this is performed.
+YesNo,S2Q3,Is the internal Active Directory OU well structured?,Please quickly summarise the structure (e.g. Server -  Computer -  User -  Groups).
+YesNo,S2Q4,Are DCs backed -up on a daily basis?,Please note any recent major or recurring problems.
+YesNo,S2Q5,Are all subnets configured in Sites and Services?,If not -  please indicate why.
+YesNo,S2Q6,Are OU's protected against accidental bulk deletion?,If not -  please indicate why.
+YesNo,S2Q7,Are (MSC standard) good or strong Password policies in place?,If not -  please indicate why.
+YesNo,S2Q8,Is SMBv1 disabled?,If not -  please indicate why.
+YesNo,S2Q9,Is NTLMv1 disabled?,If not -  please indicate why.
+YesNo,S2Q10,Are at least 2 DCs present -  within the domain -  not the site?,If not -  please indicate why.
+YesNo,S2Q11,Administrative accounts seperated from user accounts (no users in Domain Admins),Do IT staff have a different account for Admin and normal purposes?
+YesNo,S2Q12,Are Service Accounts used for applications with targeted permissions?,If not -  please indicate why.  If so -  please provide a summary of account structure.
+YesNo,S2Q13,Check or confirm no duplicate SPNs present.,Detail any duplicate SPN's.
+YesNo,S2Q14,Check or confirm no duplicate UPNs present.,Detail any duplicate UPN's.
+YesNo,S2Q15,Check or confirm Domain Users memberOf count is 1,Detail Domain Users memberOf actual count.
+YesNo,S2Q16,Confirm Kerberos Token size is set to 48KB,
+YesNo,S2Q17,Confirm no Stale domain or forest trust relationships found,Detail any stale relationships found.
+YesNo,S2Q18,Check or confirm no unsupported OS'es found in any AD Computer Objects,If unsupported OS'es found -  please detail.
+YesNo,S2Q19,Check or confirm at domain level that Windows Time Service used.,If not -  please detail time source(s).
+YesNo,S2Q20,Confirm all DCs are only being used for approved roles  - KMS or DNS or DHCP.,If not -  detail each DC and the extra roles to be migrated or removed.
+YesNo,S2Q21,Is Applocker (GPO) enabled?,If not -  why not. If so -  are policies defined and being managed?
+AllMostSomeNone,S2Q22,Is Bitlocker enabled on all disks?,If not -  why not.
+YesNo,S2Q23,Are Bitlocker keys being stored in Active Directory?,If not -  why not.
+AllMostSomeNone,S2Q24,Is LAPS (Local Admin Password Solution) implemented?,If not -  why not.
+YesNo,S2Q25,Are MSC naming standards being followed?,If not -  why not.
+YesNo,S2Q26,Is the AD Forest Functional level at least 2012 R2?,If not -  why not and what is the timeframe for upgrade?
+YesNo,S3Q1,Is standard corporate Antivirus installed?,Which product?
+YesNo,S3Q2,Are appropriate exclusions configured?,SQL Server  or  Oracle -  Cluster Services -  Hypervisors
+YesNo,S3Q3,Are all machines confirmed virus and malware free?,Provide evidence to confirm this.
+YesNo,S3Q4,Are AV alerts configured -  and functional?,Detail who is notified -  and how.
+YesNo,S3Q5,Are reports generated confirming machine health?,Confirm process and details.  If possible review (and provide details) of the latest report.
+YesNo,S4Q1,Are licenses counts and usage being tracked or maintained?,How is this done? (Product -  process)
+YesNo,S4Q2,Are all critical (local) business applications known or listed?,How is this done? (Product -  process)
+AllMostSomeNone,S4Q3,Are all critical applications or software covered with a maintenance and support agreement?,How are these support and maintenance agreements managed and renewed?
+TextField,S4Q4,How are these critical applications monitored?,Detail how this is performed.
+TextField,S4Q5,Is critical application access controlled?,I not -  explain why -  if so please outline process.
+YesNo,S4Q6,Has the agency deployed SAP?,If appropriate -  note current version.
+YesNo,S4Q7,Has the agency deployed OneVision Agency?,If appropriate -  note current version.
+YesNo,S4Q8,Has the agency deployed OneVision HQ?,If appropriate -  note current version.
+YesNo,S4Q9,Has the agency deployed Onevision Depot?,If appropriate -  note current version.
+YesNo,S4Q10,Has the agency deployed Party Data Mangement?,If appropriate -  note current version.
+YesNo,S4Q11,Has the agency deployed Saleslink?,If appropriate -  note current version.
+AllMostSomeNone,S4Q12,Are non -supported or unupdated or legacy applications secured and segregated from the active LAN?,Confirm how they are isolated (Vnet -  virtual hosts).
+YesNo,S5Q1,Is a BCP plan in place?,How was it created or managed?
+TextField,S5Q2,How often are BCP plans tested?,Who performs or validates -  what -  how -  when -  updates or changes
+YesNo,S6Q1,Are you using any IaaS services?, If yes -  list them and specifiy purpose.
+YesNo,S6Q2,Are you using any PaaS services?, If yes -  list them and specifiy purpose.
+YesNo,S6Q3,Are you using any SaaS services?, If yes -  list them and specifiy purpose (file transfer -  cloud storage -  collaboration).
+YesNo,S6Q4,Does your agency follow MSC standards regarding social media pages or accounts?,If local sites or social media accounts are used -  please provide details.
+YesNo,S6Q1,Is access to sensitive data restricted?,Please provide an outline of processes or controls used.
+YesNo,S6Q2,Are you actively using Azure Information Protection (AIP) to classify information?,Please detail how this is checked or known by IT.
+YesNo,S7Q1,Is the datacenter internal?, If external -  what tier is it?
+TextField,S7Q2,How many Datacenter incidents (failures) did you have in services in the last 12 months -  in the last 5 years?,Provide short details of outage and reparations.
+YesNo,S7Q3,Is the Datacenter Airconditioned?,If not -  what cooling is in place.  How is temperature controlled?
+YesNo,S7Q4,Is the AC redundant?,Provide evidence the units are maintenance and regularly maintained.
+YesNo,S7Q5,Does the datacenter have a smoke detector?,Confirm it is under maintenance and last date (approximately) checked.
+YesNo,S7Q6,Does the datacenter have a humidity detector?,Confirm it is under maintenance and last date (approximately) checked.
+YesNo,S7Q7,Does the datacenter have a water leak detector?,Confirm it is under maintenance and last date (approximately) checked.
+YesNo,S7Q8,Does the datacenter have a UPS?,Detail model and capacity.  Confirm under maintenance and last check date.
+YesNo,S7Q9,Does the UPS have a bypass functionality in case the UPS fails?,Is this regularly tested -  if so -  provide evidence?
+YesNo,S7Q10,Does power enter the datacenter through seperate building entries?,Provide Power Provider(s) details.
+YesNo,S7Q11,Is Datacenter access controlled?,If so -  please provide details. If not -  please explain why.
+YesNo,S7Q12,Are racks locked or access controlled?,If so -  please provide details. If not -  please explain why.
+YesNo,S7Q13,Does the datacenter have a diesel generator backup?,Is it dedicated or shared?  Provide details of any regular testing.
+YesNo,S7Q14,Does the datacenter have a fire supression system?,If so -  provide details.  If not -  please provide justification.
+YesNo,S7Q15,Is the serverroom coated or painted with fire resistant paint?,If so -  provide details.  If not -  please provide justification.
+YesNo,S7Q16,Is there a separate rack for 3rd party providers versus MSC owned hardware?,If not -  please confirm how unauthorised access is prevented.
+YesNo,S7Q17,Is the datacenter clean and free from inflamatory products (such as paper)?,Any notes from visual inspection.
+YesNo,S7Q18,Is the datacenter protected with security cameras?,Please provide details  - quantity -  management system etc.
+YesNo,S7Q19,Are color coded UTP cables used depending on the VLAN?,Please confirm colour usage.
+YesNo,S8Q1,Is a Disaster Recovery site available?,Provide details (provider -  distance -  size).
+YesNo,S8Q2,Is the DR site adequately sized and equiped?,Demonstrate any capacity management process(es)
+YesNo,S8Q3,If DR site not readily available: Is hardware available within 8 hours?,Provide details of hardware providor(s) -  spare hardware etc.
+YesNo,S8Q4,Is a DR plan available?,How was it created or managed?
+TextField,S8Q5,Detail DR plan management: testing + review or change (whom -  what -  when -  validation),Who performs or validates -  what -  how -  when -  updates or changes
+YesNo,S8Q6,Is your DR RPO below 48 hours?,Please clarify any details  - e.g. all services -  only a list etc
+YesNo,S8Q7,Is your DR RTO below 24 hours?,Please clarify any details  - e.g. all services -  only a list etc
+YesNo,S8Q8,Is a structure backup strategy in place?,Detail your backup structure -  timing and targets.
+TextField,S8Q9,Detail backup management process(es): monitoring -  alerting -  reports,
+YesNo,S8Q10,Are backups stored at a remote -  secure site?,Provide details
+YesNo,S8Q11,Are backups stored offline?,What type of media is used?
+YesNo,S8Q12,Are backups encrypted?,If so -  where are the keys stored?  Are they independent of media?
+YesNo,S8Q13,The Agency has a yearly backup for at least the last 7 years,Detail how this is checked.
+YesNo,S8Q14,Are you performing a VM backup or System State backup for AD?,How is this done? (Product -  process)
+YesNo,S8Q15,Are restores regularly tested?,Please detail test types -  and timing.
+YesNo,S8Q16,Is Backup media is stored appropriately?,Provide details of storage.
+YesNo,S8Q17,Are VMs backed -up? Or replicated?,Please provide details
+Good  or  Bad,S8Q18,Are VM backups or replications healthy?,Please confirm how replication health is managed.
+YesNo,S8Q19,Is an MSC -approved backup solution in place?,Please provide details.
+YesNo,S9Q1,Are the corporate standard browsers being maintained?,
+AllMostSomeNone,S9Q2,Are all applicable machines (desktop -  notebook) Windows 10?,If not -  why not and when will unauthorised machines be removed?
+AllMostSomeNone,S9Q3,Are all EUC devices covered by hardware maintenance agreements?,If not please provide details.
+YesNo,S9Q4,If not -  is an alternative local supplier aggrement or sufficient spare hardware available to manage expected equipment failures?,Please provide details.
+YesNo,S9Q5,Has the agency implemented any sort of BYOD programme?,Please provide details.
+AllMostSomeNone,S9Q6,Are BYOD devices audited prior to use in the workplace -  and users agree to acceptable usage terms?,
+AllMostSomeNone,S9Q7,Are all BYOD devices registered and controlled via InTune?,Detail how this process is managed and tested.
+AllMostSomeNone,S9Q8,Are all desktops or notebooks using standard Office versions?,
+AllMostSomeNone,S9Q9,Are all EUC devices using the corporate Winzip?,If an alternative product is in use -  please specify.
+YesNo,S9Q10,Are all EUC devices encrypted?, If so -  where are the keys stored (AD is preferred option).
+YesNo,S10Q1,Are all externally registered name domains hosted by an approved MSC supplier?,Please list all root domains.
+YesNo,S10Q2,Are all external SSL certificates provided by an approved MSC supplier?,Please indicate the number of certificates in actice use.
+YesNo,S11Q1,Windows Firewall Enabled on all End User Computing devices?,If not -  why not.
+AllMostSomeNone,S11Q2,Do any servers have any Remote Control application installed?,If so -  please provide details.
+AllMostSomeNone,S11Q3,Are critical servers connected to a redundant set of switches?,If not -  why not.
+AllMostSomeNone,S11Q4,Are critical servers configured with iDRAC or ILO?,If not -  why not.
+YesNo,S11Q5,Is iLO or iDRAC configured on an out -of -band network?,If not -  is this planned for the future?
+YesNo,S11Q6,Is iLO or iDRAC configured to be accessible through VPN or Remote Technology?,If not -  why not.
+AllMostSomeNone,S11Q7,Is all server hardware covered by support and maintenance agreements?,If not -  please provide details.  All essential services must be covered.
+AllMostSomeNone,S12Q1,Are all desktops or notebooks of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q2,Do all new desktop or notebooks purchases meet MSC minimum standards?,If not -  please provide details.
+AllMostSomeNone,S12Q3,Are all servers of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q4,Are all SAN hosts of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q5,Are all SAN switches of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q6,Are all NAS devices of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q7,Are all internal Wifi points of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q8,Are all internal Wifi points capable of supporting 802.1x?,If not -  confirm non -compliant devices are not on internal LAN.
+AllMostSomeNone,S12Q9,Are all local Network switches of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q10,Are all local network switches capable of supporting 802.1x?,If not -  confirm non -compliant devices are not on internal LAN.
+AllMostSomeNone,S12Q11,Are all Load Balancer devices of an MSC approved brand?,If not -  please provide details of other brands in use.
+Checkpoint -  Palo Alto -  Fortinet -  Cisco in Asset List,S12Q12,Are all Firewall devices of an MSC approved brand?,If not -  please provide details of other brands in use.
+AllMostSomeNone,S12Q13,Is all core infrastructure covered under a hardware maintenance agreement?,If not -  please provide details.  All essential services must be covered.
+YesNo,S12Q14,If not -  is an alternative local supplier aggrement or sufficient spare hardware available to manage expected equipment failures?,Provide supplier and agreement details.
+YesNo,S13Q1,Is an MSC approved Helpdesk product being used?,Which product?
+YesNo,S13Q2,Are external helpdesk staff beings used -  and have remote access to internal systems?,If so -  detail which service(s) and which system(s).
+YesNo,S13Q3,Are incidents regularly reviewed or analysed?,Provide details of this process.
+YesNo,S14Q1,Are you using a Hypervisor for production purposes?  Which product?,Detail product.
+YesNo,S14Q2,Checkpoints are being used?,Detail which or when?
+YesNo,S14Q3,No legacy device drivers used?,Detail purpose.
+AllMostSomeNone,S14Q4,Do all Host operating system and VMs have their own dedicated NICs?,If not -  please provide details.
+AllMostSomeNone,S14Q5,Are those NICs teamed?,If not -  please provide details.
+AllMostSomeNone,S14Q6,Are those NICs connected to > Gbit switches?,If not -  please provide details.
+AllMostSomeNone,S14Q7,Is dynamic memory used for most workloads (exception is SQL)?,If not -  please provide details.
+YesNo,S14Q8,Startup memory within normal values > 1GB?,If not -  please provide details.
+YesNo,S14Q9,Is NUMA spanning allowed?,No detail required.
